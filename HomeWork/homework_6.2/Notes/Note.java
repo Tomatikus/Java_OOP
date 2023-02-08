@@ -1,7 +1,5 @@
 package Notes;
 
-import java.sql.Date;
-
 public class Note {
     private String id;
     private String title;

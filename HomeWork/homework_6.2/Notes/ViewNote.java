@@ -74,10 +74,10 @@ public class ViewNote {
     private void delete() throws Exception {
         String id = prompt("Введите идентификатор пользователя для удаления: ");
         System.out.println(noteController.readNote(id));
-        String yes = prompt("Подтвердите удалениe командой YES, а если передумали, то введите любой символ. ")
+        String yes = prompt("Подтвердите удалениe командой YES, если передумали, то введите любой символ. ")
                 .toUpperCase();
         if (yes.equals("YES")) {
-            System.out.println("Происходит удаление записи...");
+            System.out.println("Удаление записи...");
             noteController.deleteNote(id);
         } else {
             System.out.println("Удаление отменено.");
